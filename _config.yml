@@ -1,0 +1,41 @@
+# Site wide configuration
+title: Trio
+description: 'A simple content-focused Jekyll theme'
+url:
+
+# Owner configuration
+owner:
+    name: Your name
+    email: your-email@example.com
+    twitter:
+    facebook:
+    github:
+    linkedin:
+    google_plus:
+
+# Disqus comments configuration (leave blank to disable comments)
+disqus_shortname:
+
+# Jekyll configuration
+permalink: /:year/:month/:day/:title/
+paginate: 6
+
+# Markdown
+markdown: redcarpet
+highlighter: pygments
+
+# Enable when using redcarpet
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']
+
+# Enable when using kramdown (you will need to use ~~~ instead of ```)
+# kramdown:
+#   auto_ids: true
+#   footnote_nr: 1
+#   entity_output: as_char
+#   toc_levels: 1..6
+#   use_coderay: false
+
+# Exclude
+exclude: ['README.md']
+
