@@ -2,4 +2,18 @@
 layout: default
 ---
 
+<br/>
+
+<h2>{{ page.title }}</h2>
+{% if page.date %}
+<span class="entry-date">
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: site.date_format }}
+    </time>
+</span>
+{% endif %}
+
+<br/>
+<br/>
+
 {{ content }}

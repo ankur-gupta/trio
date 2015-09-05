@@ -2,6 +2,7 @@
 title: Trio
 description: 'A simple content-focused Jekyll theme'
 url:
+date_format: '%B %d, %Y'
 
 # Owner configuration
 owner:

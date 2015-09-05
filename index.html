@@ -10,7 +10,7 @@ layout: default
                 {{ post.title }}
                 <span class="entry-date">
                     <time datetime="{{ post.date | date_to_xmlschema }}">
-                        {{ post.date | date: "%B %d, %Y" }}
+                        {{ post.date | date: site.date_format }}
                     </time>
                 </span>
 
