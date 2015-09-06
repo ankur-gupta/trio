@@ -3,55 +3,55 @@
 # These dashes are required so that Jekyll reads this main file and converts it into CSS later.
 # Only the main files contain these dashes. Partials do not contain these dashes.
 ---
-/* This code is copied from http://refills.bourbon.io/ */
+/* This code is adapted from http://refills.bourbon.io/ */
 /* No need to add bourbon, neat or bitters as of now */
 
-.comment {
+.post-index {
   $base-border-radius: 3px !default;
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
   $dark-gray: #333 !default;
   $base-font-color: $dark-gray !default;
-  $comment-gutter: 1.4em;
-  $comment-image-padding: 0.7em;
-  $comment-image-width: 4em;
-  $comment-color: $base-font-color;
-  $comment-background: lighten($action-color, 15%);
-  $comment-detail-color: transparentize($comment-color, 0.5);
-  $comment-image-vert-alignment: top;
+  $post-gutter: 1.4em;
+  $post-image-padding: 0.7em;
+  $post-image-width: 4em;
+  $post-color: $base-font-color;
+  $post-background: lighten($action-color, 15%);
+  $post-detail-color: transparentize($post-color, 0.5);
+  $post-image-vert-alignment: top;
 
-  border-bottom: 1px solid transparentize($comment-color, 0.9);
+  border-bottom: 1px solid transparentize($post-color, 0.9);
   display: table;
   margin-bottom: $base-spacing;
   padding-bottom: 1em;
   width: 100%;
 
-  .comment-image,
-  .comment-content {
+  .post-image,
+  .post-content {
     display: table-cell;
-    vertical-align: $comment-image-vert-alignment;
+    vertical-align: $post-image-vert-alignment;
   }
 
-  .comment-image {
-    padding-right: $comment-gutter;
+  .post-image {
+    padding-right: $post-gutter;
 
     > a > img {
-      background: $comment-background;
+      background: $post-background;
       border-radius: $base-border-radius;
       display: block;
       height: auto;
       max-width: none;
-      padding: $comment-image-padding;
-      width: $comment-image-width;
+      padding: $post-image-padding;
+      width: $post-image-width;
     }
 
-    .comment-reverse-order & {
+    .post-reverse-order & {
       padding-right: 0;
       padding-left: 10px;
     }
   }
 
-  .comment-content {
+  .post-content {
     width: 100%;
 
     h2 {
@@ -67,8 +67,8 @@
       margin-bottom: 0.5em;
     }
 
-    p.comment-detail {
-      color: $comment-detail-color;
+    p.post-detail {
+      color: $post-detail-color;
       font-size: 0.9em;
       font-style: italic;
     }
