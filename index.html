@@ -18,7 +18,10 @@ layout: default
                 <span class="excerpt">{{ post.excerpt }}</span>
             {% endif %}
         </p>
-        <p class="post-detail">{{ post.date | date: site.date_format }}</p>
+        <p class="post-detail">
+            {{ post.date | date: site.date_format }} &middot;
+            0 Comments
+        </p>
     </div>
 </div>
 {% endfor %}
