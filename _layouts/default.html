@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- Header: begin -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +28,7 @@
     <link rel="stylesheet" href="/css/colorthemes.css">
     <link rel="stylesheet" href="/css/solo.css">
     <link rel="stylesheet" href="/css/pagination.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
     <!-- Set the canonical URL for search engines -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
@@ -34,12 +36,51 @@
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="/feel.xml" />
 </head>
+<!-- Header: end -->
 
 <body>
-    <div class = "container content">
+<div class="wrapper-for-content-outside-of-footer">
+   <div class = "container content">
         <h1><a href="/">{{ site.title }}</a></h1>
         {{ content }}
     </div>
-    <!-- Include footer here later -->
+</div>
+
+<br/>
+<br/>
+
+<footer class="footer-2" role="contentinfo">
+  <div class="footer-logo">
+    <a href="/">
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+    </a>
+  </div>
+    <ul>
+      <li><a href="javascript:void(0)">About</a></li>
+      <li><a href="javascript:void(0)">Projects</a></li>
+      <li><a href="javascript:void(0)">Contact</a></li>
+    </ul>
+
+    <div class="footer-secondary-links">
+      <ul>
+        <li>Powered by <a href="javascript:void(0)">Jekyll</a>
+        using the <a href="javascript:void(0)">Trio</a> theme
+        </li>
+      </ul>
+
+      <ul class="footer-social">
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+          </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+        </a></li>
+      </ul>
+    </div>
+</footer>
+
 </body>
 </html>
