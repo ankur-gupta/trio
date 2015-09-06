@@ -1,0 +1,62 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+# These dashes are required so that Jekyll reads this main file and converts it into CSS later.
+# Only the main files contain these dashes. Partials do not contain these dashes.
+---
+
+/* No need to import bourbon here. Basic SCSS is enough. */
+
+form.contact {
+  $action-color: #477DCA !default;
+  $button-color: lighten($action-color, 15%);
+  $border-radius: 3px !default;
+  $border-width: 1px !default;
+  $border-color: #444 !default;
+  $border-active-color: #0076df !default;
+
+  input, label, select {
+    display: block;
+  }
+
+  input[type="text"], textarea[type="text"] {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+    padding: 0.75em;
+    font-weight: lighter;
+
+    border-style: solid;
+    border-color: $border-color;
+    border-width: $border-width;
+    border-radius: $border-radius;
+    transition: box-shadow .2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: $action-color;
+      box-shadow: 0 0 2px $button-color;
+    }
+  }
+
+  input[type="submit"] {
+    outline: none;
+    color: white;
+    background-color: $button-color;
+    border-radius: $border-radius;
+    padding: 0.5em;
+    margin: 0.25em 0 0 0;
+    border: 1px solid transparent;
+    height: auto;
+    font-weight: lighter;
+
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    transition-property: box-shadow, background-color;
+
+    &:hover, &:focus, &:active {
+      background-color: $action-color;
+      text-decoration: none;
+    }
+  }
+}
