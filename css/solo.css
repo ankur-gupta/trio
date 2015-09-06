@@ -23,7 +23,8 @@ body {
 }
 
 a {
-  color: #0074d9; /* From http://clrs.cc */
+  /* color: #0074d9; */ /* Original from Solo: From http://clrs.cc */
+  color: #477DCA; /* From bourbon refills */
   text-decoration: none;
 }
 
@@ -53,6 +54,18 @@ h1 {
 
 h1 a {
   color: inherit;
+}
+
+h1.site-title {
+  margin-right: 0em;
+  margin-bottom: 1em;
+  padding-right: 0em;
+  font-variant: small-caps;
+}
+
+h1.site-title a, h1.site-title a:hover, h1.site-title a:focus,
+h1.site-title a:active {
+  text-decoration: none;
 }
 
 h2 {

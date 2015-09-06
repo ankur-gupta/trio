@@ -3,6 +3,7 @@ title: Trio
 description: 'A simple content-focused Jekyll theme'
 url:
 date_format: '%B %d, %Y'
+fort_awesome_icon: tree
 
 # Owner configuration
 owner:

@@ -45,7 +45,7 @@
 <body>
 <div class="wrapper-for-content-outside-of-footer">
    <div class = "container content">
-        <h1><a href="/">{{ site.title }}</a></h1>
+        <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
         {{ content }}
     </div>
 </div>
@@ -60,7 +60,7 @@
 <!-- Footer: begin -->
 <footer class="stickyfooter" role="contentinfo">
   <div class="footer-logo">
-    <a href="/"><i class="fa fa-spinner"></i></a>
+    <a href="/"><i class="fa fa-{{ site.fort_awesome_icon }}"></i></a>
   </div>
     <ul>
       <li><a href="javascript:void(0)">About</a></li>
