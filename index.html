@@ -2,88 +2,47 @@
 layout: default
 ---
 
-<div class="posts">
-    {% for post in paginator.posts %}
-    <div class="post">
-        <li><article>
-            <a href="{{ post.url }}">
-                {{ post.title }}
-                <span class="entry-date">
-                    <time datetime="{{ post.date | date_to_xmlschema }}">
-                        {{ post.date | date: site.date_format }}
-                    </time>
-                </span>
-
-                {% if post.summary %}
-                    <span class="excerpt">{{ post.summary }}</span>
-                {% else %}
-                    <span class="excerpt">{{ post.excerpt }}</span>
-                {% endif %}
-            </a>
-        </article></li>
+{% for post in paginator.posts %}
+<div class="comment">
+    <div class="comment-image">
+        <a href="{{ post.url }}">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+        </a>
     </div>
-    {% endfor %}
+    <div class="comment-content">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>
+            {% if post.summary %}
+                <span class="excerpt">{{ post.summary }}</span>
+            {% else %}
+                <span class="excerpt">{{ post.excerpt }}</span>
+            {% endif %}
+        </p>
+        <p class="comment-detail">{{ post.date | date: site.date_format }}</p>
+    </div>
 </div>
+{% endfor %}
 
+
+<!-- Pagination links -->
 <div class="pagination">
-    <div class="left">
-    {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-            <a class="pagination-item" href="/">Newer</a>
-        {% else %}
-            <a class="pagination-item" href="/page{{paginator.previous_page}}">Newer</a>
-        {% endif %}
-    {% else %}
-        <span class="pagination-item disabled">Newer</span>
-    {% endif %}
-    </div>
-
-    <div class="right">
-    {% if paginator.next_page %}
-        <a class="pagination-item" href="/page{{paginator.next_page}}">Older</a>
-    {% else %}
-        <span class="pagination-item disabled">Older</span>
-    {% endif %}
-    </div>
+  <ul>
+      <li class="page-prev">
+          {% if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path }}">Prev</a>
+          {% else %}
+              <span class="disabled">Prev</span>
+          {% endif %}
+      </li>
+      <li>
+          <span class="current">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      </li>
+      <li class="page-next">
+          {% if paginator.next_page %}
+              <a href="{{ paginator.next_page_path }}">Next</a></li>
+          {% else %}
+              <span class="disabled">Next</span>
+          {% endif %}
+      </li>
+  </ul>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

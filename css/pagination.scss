@@ -1,0 +1,95 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+# These dashes are required so that Jekyll reads this main file and converts it into CSS later.
+# Only the main files contain these dashes. Partials do not contain these dashes.
+---
+/* This code is copied from http://refills.bourbon.io/ */
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+.pagination {
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $pagination-border-color: $base-border-color;
+  $pagination-border: 1px solid $pagination-border-color;
+  $pagination-background: lighten($pagination-border-color, 10);
+  $pagination-hover-background: lighten($pagination-background, 5);
+  $pagination-color: $base-font-color;
+  $pagination-disabled-color: #E1E1E1 !default;
+
+  text-align: center;
+
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline;
+      list-style: none;
+    }
+
+    ul li {
+      display: none;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: inline;
+      }
+
+      @include media($large-screen) {
+        display: inline;
+      }
+    }
+
+    li a {
+      @include transition (all 0.1s ease-in-out);
+      background: $pagination-background;
+      border-radius: $base-border-radius;
+      border: $pagination-border;
+      color: $pagination-color;
+      outline: none;
+      padding: ($base-spacing / 4) ($gutter / 2);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        background: $pagination-hover-background;
+        color: $action-color;
+      }
+
+      &:active {
+        background: $pagination-background;
+      }
+    }
+
+    li span {
+      background: $pagination-background;
+      border-radius: $base-border-radius;
+      border: $pagination-border;
+      color: $pagination-disabled-color;
+      outline: none;
+      padding: ($base-spacing / 4) ($gutter / 2);
+      text-decoration: none;
+    }
+
+    li span.current {
+      background: $pagination-hover-background;
+      border-radius: $base-border-radius;
+      border: $pagination-border;
+      color: $action-color;
+      outline: none;
+      padding: ($base-spacing / 4) ($gutter / 2);
+      text-decoration: none;
+    }
+  }
+}
