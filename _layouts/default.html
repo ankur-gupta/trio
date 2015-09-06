@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <!-- Header: begin -->
 <head>
     <meta charset="utf-8">
@@ -30,6 +31,9 @@
     <link rel="stylesheet" href="/css/pagination.css">
     <link rel="stylesheet" href="/css/footer.css">
 
+    <!-- Social buttons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <!-- Set the canonical URL for search engines -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
@@ -46,14 +50,17 @@
     </div>
 </div>
 
-<br/>
-<br/>
 
-<footer class="footer-2" role="contentinfo">
+<!-- Some empty space between the page counter and footer -->
+<div>
+    <br/><br/><br/><br/>
+</div>
+
+
+<!-- Footer: begin -->
+<footer class="stickyfooter" role="contentinfo">
   <div class="footer-logo">
-    <a href="/">
-        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
-    </a>
+    <a href="/"><i class="fa fa-spinner"></i></a>
   </div>
     <ul>
       <li><a href="javascript:void(0)">About</a></li>
@@ -69,18 +76,47 @@
       </ul>
 
       <ul class="footer-social">
-        <li><a href="javascript:void(0)">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
-          </a></li>
-        <li><a href="javascript:void(0)">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
-        </a></li>
-        <li><a href="javascript:void(0)">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
-        </a></li>
+        {% if site.owner.github %}
+            <li><a href="javascript:void(0)">
+                <i class="fa fa-github-square"></i>
+            </a></li>
+        {% endif %}
+
+        {% if site.owner.twitter %}
+            <li><a href="javascript:void(0)">
+                <i class="fa fa-twitter-square"></i>
+            </a></li>
+        {% endif %}
+
+        {% if site.owner.linkedin %}
+            <li><a href="javascript:void(0)">
+                <i class="fa fa-linkedin-square"></i>
+            </a></li>
+        {% endif %}
+
+        {% if site.owner.google_plus %}
+            <li><a href="javascript:void(0)">
+                <i class="fa fa-google-plus-square"></i>
+            </a></li>
+        {% endif %}
+
+        {% if site.owner.facebook %}
+            <li><a href="javascript:void(0)">
+                <i class="fa fa-facebook-square"></i>
+            </a></li>
+        {% endif %}
+
+        {% if site.owner.youtube %}
+            <li><a href="javascript:void(0)">
+                <i class="fa fa-youtube-square"></i>
+            </a></li>
+        {% endif %}
       </ul>
     </div>
+    <!-- This removes the small sliver of whitespace at the end of the page -->
+    <br/>
 </footer>
+<!-- Footer: end -->
 
 </body>
 </html>

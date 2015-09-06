@@ -8,11 +8,12 @@ date_format: '%B %d, %Y'
 owner:
     name: Your name
     email: your-email@example.com
-    twitter:
-    facebook:
-    github:
-    linkedin:
-    google_plus:
+    github: abc
+    twitter: abc
+    linkedin: abc
+    facebook: abc
+    google_plus: abc
+    youtube: abc
 
 # Disqus comments configuration (leave blank to disable comments)
 disqus_shortname:

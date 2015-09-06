@@ -29,20 +29,20 @@ html, body {
   display: block;
 }
 
-.footer-2, .wrapper-for-content-outside-of-footer:after {
+.stickyfooter, .wrapper-for-content-outside-of-footer:after {
   height: 17em;
   @include media($large-screen) {
     height: 4em;
   }
 }
 
-.footer-2 {
+.stickyfooter {
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
   $footer-background: lighten($action-color, 15%);
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+  $footer-hover-color: white;
+  $footer-text-color: transparentize($footer-hover-color, 0.6);
+  $footer-link-color: transparentize($footer-hover-color, 0.3);
 
   background: $footer-background;
   padding: $base-spacing;
@@ -59,8 +59,13 @@ html, body {
     }
   }
 
-  .footer-logo img {
+  .footer-logo {
     height: 1.6em;
+    line-height: 0.6em;
+    a i {
+      font-size: 1.75em;
+      color: $footer-hover-color;
+    }
   }
 
   ul {
@@ -77,7 +82,7 @@ html, body {
   }
 
   ul li {
-    color: $footer-link-color;
+    color: $footer-text-color;
     list-style: none;
     padding-right: 1em;
 
@@ -93,7 +98,7 @@ html, body {
 
     &:focus,
     &:hover {
-      color: transparentize($footer-color, 0);
+      color: $footer-hover-color
     }
   }
 
@@ -124,16 +129,9 @@ html, body {
         &:last-child {
           padding-right: 0;
         }
-      }
 
-      img {
-        height: 1.6em;
-        opacity: 0.7;
-        padding: 1px;
-
-        &:focus,
-        &:hover {
-          opacity: 1;
+        i {
+          font-size: 1.5em;
         }
       }
     }
