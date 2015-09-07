@@ -1,7 +1,7 @@
 # Site wide configuration
 title: Trio
 description: 'A simple content-focused Jekyll theme'
-url:
+url: http://perfectlyrandom.org/trio
 date_format: '%B %d, %Y'
 fort_awesome_icon: tree
 
@@ -27,7 +27,7 @@ sharing:
     reddit: true
 
 # Disqus comments configuration (leave blank to disable comments)
-disqus_shortname:
+disqus_shortname: 'perfectlyrandom-trio'
 
 # Jekyll configuration
 permalink: /:year/:month/:day/:title/
