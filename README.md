@@ -15,12 +15,12 @@ This [Jekyll](http://jekyllrb.com/) theme was crafted with <3 by [Ankur Gupta](h
 Trio was created using inspiration and partial code from these sources:
 
 * [Solo](http://chibicode.github.io/solo/) theme by [Shu Uesugi](https://github.com/chibicode) - HTML/CSS for posts.
-* [Lanyon](http://lanyon.getpoole.com/) & [Hyde](http://hyde.getpoole.com/)themes by [Mark Otto](https://github.com/mdo) - color themes.
+* [Lanyon](http://lanyon.getpoole.com/) & [Hyde](http://hyde.getpoole.com/) themes by [Mark Otto](https://github.com/mdo) - color themes.
 * [Pixyll](http://pixyll.com/) theme by [John Otander](https://github.com/johnotander) - design principles, some HTML/CSS.
 * [Bourbon Refills](http://refills.bourbon.io/) - many HTML/CSS snippets.
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome) - awesome icons.
 
-A big thank you to all of them. I have added links to their licenses wherever I copied their code verbatim. 
+A big thank you to all of them. I have added links to their licenses wherever I substantially copied their code.
 
 ### Color Themes
 Trio comes with nine color themes (1 default + 8 from [Lanyon Color Themes](https://github.com/poole/lanyon)). These colors are listed in `_sass/_colors.scss`. To change the color theme, simply change the `$theme-color` variable in `_sass/_colors.scss`:
@@ -35,7 +35,7 @@ This is an example of the red/`base-08` color theme.
 
 
 ### Work in progress
-I am not an expert in SCSS and the current code might be superfluous or overkill. While the theme works nicely, I will make the code more concise without changing the look and feel of the theme.
+I am not an expert in SCSS and the current code might be superfluous or overkill. The theme works nicely even now but I will make the code more concise without changing the look and feel of the theme.
 
 Some things I plan to add in the future:
 
