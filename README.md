@@ -2,8 +2,8 @@
 
 Trio is a simple, content-focused, responsive, mobile-friendly [Jekyll](http://jekyllrb.com/) theme. Trio comes with support for these things out-of-the-box:
 
-* [RSS feed](/feed.xml)
-* [404 page](/404.html)
+* RSS feed
+* 404 page
 * Markdown syntax highlighting, fenced code blocks, tables, GitHub gists, blockquotes
 * Post sharing buttons
 * Paginated list of posts
