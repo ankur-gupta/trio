@@ -10,4 +10,10 @@ Using Jekyll, you can quickly create blog posts using [Markdown](http://daringfi
 
 If you are comfortable with some terminal work, checkout [Jekyll Quickstart](http://jekyllrb.com/docs/quickstart/). If not, you may want to look at GitHub Pages [Automatic Generator](https://pages.github.com/).
 
+[This post](http://www.perfectlyrandom.org/2014/06/29/getting-around-with-liquid-markdown-javascript-html/) might help with a more in-depth understanding of how Liquid tags, Markdown and HTML are mixed together.
+
+
+### Tips
+
 The URL to this blog post depends on the YAML field `date`. Do not change the date after you publish this post. Use the YAML field `update_date` instead.
+
