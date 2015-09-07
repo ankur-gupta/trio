@@ -1,3 +1,27 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+# These dashes are required so that Jekyll reads this main file and converts it into CSS later.
+# Only the main files contain these dashes. Partials do not contain these dashes.
+---
+
+/* This code is copied from
+https://github.com/chibicode/solo/blob/gh-pages/css/solo.css
+*/
+
+/* Color Themes */
+/* Original from Solo (http://clrs.cc) $default: #0074d9; */
+$black: #000;
+$white: #fff;
+$default: #477DCA; /* Baby Blue */
+$base-08: #ac4142; /* Red */
+$base-09: #d28445; /* Orange */
+$base-0a: #f4bf75; /* Yellow */
+$base-0b: #90a959; /* Green */
+$base-0c: #75b5aa; /* Cyan */
+$base-0d: #6a9fb5; /* Blue */
+$base-0e: #aa759f; /* Magenta */
+$base-0f: #8f5536; /* Brown */
+
 @import url(//fonts.googleapis.com/css?family=Montserrat:700);
 @import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
 
@@ -22,11 +46,12 @@ body {
   }
 }
 
-a {
-  /* color: #0074d9; */ /* Original from Solo: From http://clrs.cc */
-  color: #477DCA; /* From bourbon refills */
+body a {
+  color: $default;
   text-decoration: none;
 }
+
+@import 'themes';
 
 a:hover, a:focus {
   text-decoration: underline;
@@ -59,14 +84,12 @@ h1 a {
 div.site-title {
   text-align: center;
   margin-bottom: 3em;
-}
-
-div.site-title a, div.site-title a:hover, div.site-title a:focus,
-div.site-title a:active {
-  font-size: 3em;
-  color: black;
-  text-transform: uppercase;
-  text-decoration: none;
+  a, a:hover, a:focus, a:active {
+    font-size: 3em;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
 
 h2 {
