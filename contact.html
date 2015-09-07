@@ -8,7 +8,7 @@ permalink: /contact/
     <form action="https://formspree.io/{{ site.owner.email }}" method="POST" class="contact">
         <input type="text" name="email" placeholder="Email Address" />
         <textarea type="text" name="content" rows="10" placeholder="What would you like to say?"></textarea>
-        <input type="hidden" name="_next" value="/thanks/" />
+        <input type="hidden" name="_next" value="{{ site.url }}/thanks.html" />
         <input type="hidden" name="_subject" value="New submission!" />
         <input type="text" name="_gotcha" style="display:none" />
         <input type="submit" value="Say Hello" />
