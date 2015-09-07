@@ -6,7 +6,7 @@
 
 /* No need to import bourbon here. Basic SCSS is enough. */
 
-form.contact {
+form.contact, div.contact {
   $action-color: #477DCA !default;
   $button-color: lighten($action-color, 15%);
   $border-radius: 3px !default;
@@ -39,7 +39,7 @@ form.contact {
     }
   }
 
-  input[type="submit"] {
+  input[type="submit"], a.button {
     outline: none;
     color: white;
     background-color: $button-color;
@@ -60,3 +60,12 @@ form.contact {
     }
   }
 }
+
+div.contact, h2.contact, span.contact {
+  text-align: center;
+}
+
+div.contact {
+  padding: 2em;
+}
+
