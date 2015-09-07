@@ -5,7 +5,7 @@ permalink: /contact/
 ---
 
 <div>
-    <form class="contact">
+    <form action="https://formspree.io/{{ site.owner.email }}" method="POST" class="contact">
         <input type="text" name="email" placeholder="Email Address" />
         <textarea type="text" name="content" rows="10" placeholder="What would you like to say?"></textarea>
         <input type="hidden" name="_next" value="/thanks/" />
