@@ -9,14 +9,14 @@ fort_awesome_icon: 'cog fa-spin'
 # name and email are required (change code to remove these)
 # (leave the rest blank to disable the corresponding sharing button)
 owner:
-    name: Your name
-    email: your-email@example.com
-    github: abc
-    twitter: abc
-    linkedin: abc
-    facebook: abc
-    google_plus: abc
-    youtube: abc
+    name: Ankur Gupta
+    email: ankur@perfectlyrandom.org
+    github: ankur-gupta
+    twitter: ankurIO
+    linkedin: ankurguptawisc
+    facebook:
+    google_plus:
+    youtube:
 
 # Post sharing icons
 sharing:
