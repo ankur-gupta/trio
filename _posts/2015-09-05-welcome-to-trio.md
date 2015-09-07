@@ -4,7 +4,7 @@ title: Welcome to Trio
 date: 2015-09-05
 update_date: 2015-09-06
 summary: An introduction to a new Jekyll theme named Trio.
-logo: spinner
+logo: certificate
 ---
 
 Trio is a simple, content-focused, responsive, mobile-friendly [Jekyll](http://jekyllrb.com/) theme. Trio comes with support for these things out-of-the-box:
@@ -16,6 +16,8 @@ Trio is a simple, content-focused, responsive, mobile-friendly [Jekyll](http://j
 * Paginated list of posts
 * [Disqus integration]({% post_url 2015-09-06-setting-up-disqus-integration %})
 * Formspree [contact form](/contact/)
+* Nine color themes
+* Support for logos using [Font Awesome](http://fortawesome.github.io/Font-Awesome) icons
 
 <br/>
 ### Where is it?

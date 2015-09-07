@@ -22,6 +22,18 @@ Trio was created using inspiration and partial code from these sources:
 
 A big thank you to all of them. I have added links to their licenses wherever I copied their code verbatim. 
 
+### Color Themes
+Trio comes with nine color themes (1 default + 8 from [Lanyon Color Themes](https://github.com/poole/lanyon)). These colors are listed in `_sass/_colors.scss`. To change the color theme, simply change the `$theme-color` variable in `_sass/_colors.scss`:
+
+```scss
+$theme-color: $base-08; /* Red */
+```
+
+This is an example of the red/`base-08` color theme.
+
+![Trio with red color theme](trio-red-screenshot.png)
+
+
 ### Work in progress
 I am not an expert in SCSS and the current code might be superfluous or overkill. While the theme works nicely, I will make the code more concise without changing the look and feel of the theme.
 
