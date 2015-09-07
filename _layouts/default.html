@@ -24,7 +24,7 @@
     {% endif %}
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/trio.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/trio.css">
 
     <!-- Social buttons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -33,7 +33,7 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="/feel.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ site.url }}feed.xml" />
 </head>
 <!-- Header: end -->
 
