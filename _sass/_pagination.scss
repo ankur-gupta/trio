@@ -29,15 +29,8 @@ MIT License
 
   .post-image {
     padding-right: $post-gutter;
-
-    > a > img {
-      background: $post-background;
-      border-radius: $base-border-radius;
-      display: block;
-      height: auto;
-      max-width: none;
-      padding: $post-image-padding;
-      width: $post-image-width;
+    i {
+      font-size: 3em;
     }
 
     .post-reverse-order & {
