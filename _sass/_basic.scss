@@ -1,30 +1,3 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-# These dashes are required so that Jekyll reads this main file and converts it into CSS later.
-# Only the main files contain these dashes. Partials do not contain these dashes.
----
-
-/* This code is copied from
-https://github.com/chibicode/solo/blob/gh-pages/css/solo.css
-*/
-
-/* Color Themes */
-/* Original from Solo (http://clrs.cc) $default: #0074d9; */
-$black: #000;
-$white: #fff;
-$default: #477DCA; /* Baby Blue */
-$base-08: #ac4142; /* Red */
-$base-09: #d28445; /* Orange */
-$base-0a: #f4bf75; /* Yellow */
-$base-0b: #90a959; /* Green */
-$base-0c: #75b5aa; /* Cyan */
-$base-0d: #6a9fb5; /* Blue */
-$base-0e: #aa759f; /* Magenta */
-$base-0f: #8f5536; /* Brown */
-
-@import url(//fonts.googleapis.com/css?family=Montserrat:700);
-@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
-
 html {
   font: 16px/1.5 Inconsolata, sans-serif;
 }
@@ -37,7 +10,7 @@ html {
 
 body {
   margin: 2rem 0 5rem;
-  color: #333;
+  color: $base-gray;
 }
 
 @media (min-width: 30rem) {
@@ -46,22 +19,23 @@ body {
   }
 }
 
-body a {
-  color: $default;
+a {
   text-decoration: none;
 }
 
-@import 'themes';
-
 a:hover, a:focus {
   text-decoration: underline;
+}
+
+body a {
+  color: $theme-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat, sans-serif;
   margin: 0 0 0.5rem -0.1rem /* align left edge */;
   line-height: 1;
-  color: #111;
+  color: darken($base-gray, 13.5%);
   text-rendering: optimizeLegibility;
 }
 
@@ -86,7 +60,7 @@ div.site-title {
   margin-bottom: 3em;
   a, a:hover, a:focus, a:active {
     font-size: 3em;
-    color: black;
+    color: $black;
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -129,8 +103,8 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   padding: .5rem 1rem;
-  border-left: .25rem solid #ccc;
-  color: #666;
+  border-left: .25rem solid lighten($base-gray, 60%);
+  color: lighten($base-gray, 20%);
 }
 
 blockquote p:last-child {
@@ -140,7 +114,7 @@ blockquote p:last-child {
 hr {
   border: none;
   margin: 1.5rem 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid lighten($base-gray, 60%);
   position: relative;
   top: -1px;
 }
@@ -156,18 +130,18 @@ hr {
 
 table {
   width: 100%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $table-border;
   border-collapse: collapse;
 }
 
 td, th {
   padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $table-border;
 }
 
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: $table-alt-row-color;
 }
 
 pre, code {
@@ -179,7 +153,7 @@ pre {
   font-size: 0.75rem;
   line-height: 1.5;
   border: 1px solid #e6e1dc;
-  background-color: #fff;
+  background-color: $white;
 }
 
 code {
@@ -189,7 +163,7 @@ code {
 
 pre > code {
   padding: 0;
-  background-color: #fff;
+  background-color: $white;
 }
 
 .container {

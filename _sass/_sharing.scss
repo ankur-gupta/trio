@@ -1,0 +1,25 @@
+/* This is a partial SCSS file */
+
+div.sharing {
+    $icon-standard-color: lighten($theme-color, 15%);
+    margin: 0;
+    padding: 0;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            display: inline-block;
+            font-size: 1em;
+            margin: 0;
+            a {
+                color: $icon-standard-color;
+                &:hover, &:focus, &:active {
+                    color: $theme-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

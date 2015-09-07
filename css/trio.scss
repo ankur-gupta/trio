@@ -1,0 +1,29 @@
+---
+# Only the main SASS file needs front matter (the dashes are enough)
+# These dashes are required so that Jekyll reads this main file and converts it into CSS later.
+# Only the main files contain these dashes. Partials do not contain these dashes.
+---
+
+/*
+This is the main SCSS file for Trio.
+All other files are partial SCSS or CSS files.
+All other files are loaded into this file
+Location of partials is `sass_dir`, which defaults to `_sass`.
+*/
+
+@import url('normalize.css');
+@import url('syntax.css');
+@import 'colors';
+@import url(//fonts.googleapis.com/css?family=Montserrat:700);
+@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import 'basic';
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'footer';
+@import 'pagination';
+@import 'forms';
+@import 'sharing';
+
+
+
+

@@ -1,0 +1,24 @@
+
+/* This is a partial SCSS file */
+
+/* Basic colors - not affected by the color theme */
+$black: #000;
+$white: #fff;
+$base-gray: #333;
+$table-border: #e5e5e5;
+$table-alt-row-color: #f9f9f9;
+
+/* Color Themes */
+/* Original from Solo (http://clrs.cc) $default: #0074d9; */
+$default: #477DCA; /* Baby Blue */
+$base-08: #ac4142; /* Red */
+$base-09: #d28445; /* Orange */
+$base-0a: #f4bf75; /* Yellow */
+$base-0b: #90a959; /* Green */
+$base-0c: #75b5aa; /* Cyan */
+$base-0d: #6a9fb5; /* Blue */
+$base-0e: #aa759f; /* Magenta */
+$base-0f: #8f5536; /* Brown */
+
+/* Change this variable if you want to change the color theme */
+$theme-color: $default;

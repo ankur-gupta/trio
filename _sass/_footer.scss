@@ -1,13 +1,6 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-# These dashes are required so that Jekyll reads this main file and converts it into CSS later.
-# Only the main files contain these dashes. Partials do not contain these dashes.
----
-/* This code is copied from http://refills.bourbon.io/ */
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "bourbon/bourbon";
-@import "neat/neat";
+/* This is a partial SCSS file */
+/* This code is copied & modified from http://refills.bourbon.io/ */
 
 $medium-screen: em(640) !default;
 $large-screen: em(860) !default;
@@ -38,9 +31,8 @@ html, body {
 
 .stickyfooter {
   $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $footer-background: lighten($action-color, 15%);
-  $footer-hover-color: white;
+  $footer-background: lighten($theme-color, 15%);
+  $footer-hover-color: $white;
   $footer-text-color: transparentize($footer-hover-color, 0.6);
   $footer-link-color: transparentize($footer-hover-color, 0.3);
 
