@@ -14,6 +14,7 @@ Trio is a simple, content-focused, responsive, mobile-friendly [Jekyll](http://j
 * Post sharing buttons
 * Paginated list of posts
 * [Disqus integration]({% post_url 2015-09-06-setting-up-disqus-integration %})
+* Formspree [contact form](/contact/)
 
 <br/>
 ### Where is it?
