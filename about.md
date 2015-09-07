@@ -15,5 +15,5 @@ Checkout the [Github repository](https://github.com/ankur-gupta/trio) to downloa
 Many thanks to the following:
 
 * [Jekyll](http://jekyllrb.com)
-* [Bourbon] (http://bourbon.io/)
+* [Bourbon](http://bourbon.io/)
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome)

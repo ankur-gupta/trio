@@ -9,13 +9,13 @@ logo: certificate
 
 Trio is a simple, content-focused, responsive, mobile-friendly [Jekyll](http://jekyllrb.com/) theme. Trio comes with support for these things out-of-the-box:
 
-* [RSS feed](/feed.xml)
-* [404 page](/404.html)
+* [RSS feed]({{ site.url }}/feed.xml)
+* [404 page]({{ site.url }}/404.html)
 * Markdown syntax highlighting, fenced code blocks, tables, GitHub gists, blockquotes
 * Post sharing buttons
 * Paginated list of posts
-* [Disqus integration]({% post_url 2015-09-06-setting-up-disqus-integration %})
-* Formspree [contact form](/contact/)
+* [Disqus integration]({{ site.url }}{% post_url 2015-09-06-setting-up-disqus-integration %})
+* Formspree [contact form]({{ site.url }}/contact/)
 * Nine color themes
 * Support for logos using [Font Awesome](http://fortawesome.github.io/Font-Awesome) icons
 
