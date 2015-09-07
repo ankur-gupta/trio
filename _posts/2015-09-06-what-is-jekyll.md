@@ -2,6 +2,7 @@
 layout: post
 title: What is Jeykll?
 date: 2015-09-06
+logo: magic
 ---
 
 [Jekyll](http://jekyllrb.com/) is a system to create blog-aware, [static](https://en.wikipedia.org/wiki/Static_web_page) web pages. Jekyll integrates nicely with [GitHub Pages](https://pages.github.com/). 

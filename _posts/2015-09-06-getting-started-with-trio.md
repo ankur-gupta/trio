@@ -3,6 +3,7 @@ layout: post
 title: Getting started with Trio
 date: 2015-09-06
 summary: Basic instructions and tips to get Trio working on your local machine.
+logo: rocket
 ---
 
 ### Very First Steps

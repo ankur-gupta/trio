@@ -2,6 +2,7 @@
 layout: post
 title: Setting up Disqus integration
 date: 2015-09-06
+logo: comments-o
 ---
 
 Trio comes with [Disqus](http://disqus.com) integration. Trio contains all the Disqus Javascript and HTML code required to make Disqus work. All you need to do is change the `disqus_shortname` field in `_config.yml`.

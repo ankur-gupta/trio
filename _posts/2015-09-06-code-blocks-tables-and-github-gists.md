@@ -2,6 +2,7 @@
 layout: post
 title: Code blocks, Tables and GitHub gists
 date: 2015-09-06
+logo: code
 ---
 
 Examples to show how these basic components look in Trio.

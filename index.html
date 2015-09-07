@@ -6,7 +6,11 @@ layout: default
 <div class="post-index">
     <div class="post-image">
         <a href="{{ post.url }}">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+            {% if post.logo %}
+              <i class="fa fa-{{ post.logo }}" style="font-size:3em; vertical-align:middle"></i>
+            {% else %}
+              <i class="fa fa-question-circle" style="font-size:3em; vertical-align:middle"></i>
+            {% endif %}
         </a>
     </div>
     <div class="post-content">

@@ -4,6 +4,7 @@ title: Welcome to Trio
 date: 2015-09-05
 update_date: 2015-09-06
 summary: An introduction to a new Jekyll theme named Trio.
+logo: spinner
 ---
 
 Trio is a simple, content-focused, responsive, mobile-friendly [Jekyll](http://jekyllrb.com/) theme. Trio comes with support for these things out-of-the-box:
