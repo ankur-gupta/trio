@@ -31,7 +31,7 @@ $theme-color: $base-08; /* Red */
 
 This is an example of the red/`base-08` color theme.
 
-![Trio with red color theme](trio-red-screenshot.png)
+![Trio with red color theme](https://cloud.githubusercontent.com/assets/7110058/9712293/858a2090-54fe-11e5-8165-e16d3b2d9efd.png)
 
 
 ### Work in progress
