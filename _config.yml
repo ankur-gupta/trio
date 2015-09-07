@@ -16,6 +16,14 @@ owner:
     google_plus: abc
     youtube: abc
 
+# Post sharing icons
+sharing:
+    twitter: true
+    linkedin: true
+    facebook: true
+    google_plus: true
+    reddit: true
+
 # Disqus comments configuration (leave blank to disable comments)
 disqus_shortname:
 
