@@ -4,21 +4,27 @@ layout: default
 
 <br/>
 
-<h2>{{ page.title }}</h2>
-{% if page.date %}
-<span class="post-date">
-    <time datetime="{{ page.date | date_to_xmlschema }}">
-        {{ page.date | date: site.date_format }}
-        {% if site.disqus_shortname %}
-            &middot;
-            <a href="{{ site.url }}{{ page.url }}index.html#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
+<div class="post-title">
+    <div class="logo">
+        <i class="fa fa-{{ page.logo }}"></i>
+    </div>
+    <div class="title">
+        <h2>{{ page.title }}</h2>
+        {% if page.date %}
+        <span>
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+                {{ page.date | date: site.date_format }}
+                {% if site.disqus_shortname %}
+                    &middot;
+                    <a href="{{ site.url }}{{ page.url }}index.html#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
+                {% endif %}
+            </time>
+        </span>
         {% endif %}
-    </time>
-</span>
-{% endif %}
+    </div>
+</div>
 
 <div>
-    <br/>
     <br/>
 </div>
 

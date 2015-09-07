@@ -177,9 +177,26 @@ pre > code {
   padding: 0 1rem;
 }
 
-span.post-date {
-  font-size: 0.75em;
-  padding: 0;
-  margin: 0;
+div.post-title {
+  div.logo {
+    display:inline-block;
+    padding-right:0.75em;
+    vertical-align:top;
+    font-size:2em;
+    color: $theme-color;
+  }
+  div.title {
+    display:inline-block;
+    h2 {
+      display:block;
+      padding:0;
+      margin:0;
+    }
+    span {
+      padding-left:0.25em;
+      font-size: 0.75em;
+    }
+  }
 }
+
 
