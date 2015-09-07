@@ -77,3 +77,9 @@ This is how GitHub Gists look in Solo.
 <script src="https://gist.github.com/ankur-gupta/582bfba52054b9e8d9b3.js"></script>
 
 
+### Blockquotes
+
+Trio supports lists, `<hr>`s, `<table>`s  and
+
+> blockquotes
+
