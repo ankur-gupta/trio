@@ -39,7 +39,8 @@ I am not an expert in SCSS and the current code might be superfluous or overkill
 
 Some things I plan to add in the future:
 
-* Search capability
+* Add search capability
+* Add site icons
 
 
 ### License
