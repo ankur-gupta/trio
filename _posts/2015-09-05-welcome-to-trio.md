@@ -21,5 +21,3 @@ Trio lives in a [GitHub repository](https://github.com/ankur-gupta/trio). It is 
 
 Please feel free to download it, request a feature or report a bug.
 
-
-The URL to this blog post depends on the YAML field `date`. Do not change the date after you publish this post. Use the YAML field `update_date` instead.

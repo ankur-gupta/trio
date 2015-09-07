@@ -6,6 +6,8 @@ date_format: '%B %d, %Y'
 fort_awesome_icon: tree
 
 # Owner configuration
+# name and email are required (change code to remove these)
+# (leave the rest blank to disable the corresponding sharing button)
 owner:
     name: Your name
     email: your-email@example.com
@@ -29,7 +31,7 @@ disqus_shortname:
 
 # Jekyll configuration
 permalink: /:year/:month/:day/:title/
-paginate: 6
+paginate: 4
 
 # Markdown
 markdown: redcarpet
