@@ -7,7 +7,7 @@ Trio is a simple, content-focused, responsive, mobile-friendly [Jekyll](http://j
 * Markdown syntax highlighting, fenced code blocks, tables, GitHub gists, blockquotes
 * Post sharing buttons
 * Paginated list of posts
-* [Disqus integration]({% post_url 2015-09-06-setting-up-disqus-integration %})
+* Disqus integration
 
 This [Jekyll](http://jekyllrb.com/) theme was crafted with <3 by [Ankur Gupta](https://github.com/ankur-gupta). Checkout the [demo](http://perfectlyrandom.org/trio/).
 
