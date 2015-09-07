@@ -6,7 +6,7 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 {% if page.date %}
-<span class="entry-date">
+<span class="post-date">
     <time datetime="{{ page.date | date_to_xmlschema }}">
         {{ page.date | date: site.date_format }}
         {% if site.disqus_shortname %}
