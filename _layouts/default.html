@@ -32,6 +32,14 @@
     <meta name="twitter:description" content="{% if page.summary %}{{ page.summary | strip_html }}{% elsif page.excerpt %}{{ page.excerpt  | strip_html }}{% else %}{{ site.description | strip_html }}{% endif %}" />
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
 
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html }}{% elsif page.excerpt %}{{ page.excerpt  | strip_html }}{% else %}{{ site.description | strip_html }}{% endif %}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:site_name" content="{{ site.title | strip_html | xml_escape }}">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ site.url }}/css/trio.css">
 
