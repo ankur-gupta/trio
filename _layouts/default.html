@@ -29,7 +29,7 @@
         <meta name="twitter:creator" content="@{{ site.owner.twitter }}" />
     {% endif %}
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta name="twitter:description" content="{% if page.summary %}{{ page.summary | strip_html | xml_escape }}{% elsif page.excerpt | strip_html | xml_escape %}{{ page.excerpt }}{% else %}{{ site.description | strip_html | xml_escape }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.summary %}{{ page.summary | strip_html }}{% elsif page.excerpt %}{{ page.excerpt  | strip_html }}{% else %}{{ site.description | strip_html }}{% endif %}" />
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
 
     <!-- Custom CSS -->
