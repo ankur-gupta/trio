@@ -4,36 +4,25 @@ title: Search
 permalink: /search/
 ---
 
-<!-- HTML elements for search -->
-<div class="contact">
+<div class="search-query">
     <h2><a href="{{ site.url }}{{ page.url }}">Search</a></h2>
-    <div id="search-container">
-        <input type="text" id="search-input" placeholder="Search entire site" />
-    </div>
+    <input type="text" id="search-input" placeholder="Search entire site" />
 </div>
 
-<div class="post-index">
-    <div class="post-content">
-        <div id="results-container"></div>
-    </div>
-</div>
+<div class="search-results" id="results-container"></div>
 
 <!-- Script pointing to jekyll-search.js -->
 <script src="{{ site.url }}/js/jekyll-search.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-    // window.onpageshow = function() {
-    //  document.getElementById('search-input').reset();
-    // }
-  // document.getElementById('search-input').reset();
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '{{ site.url }}/search.json',
-    searchResultTemplate: '<h2><a href="{url}" title="{desc}">{title}</a></h2><p><span class="excerpt">{snippet}</span></p><p class="post-detail">{date}</p><br/>',
+    searchResultTemplate: '<div class="single-search-result"><h2><a href="{url}" title="{desc}">{title}</a></h2><p>{snippet}</p><p class="date">{date}</p></div>',
     noResultsText: 'No results found',
     limit: 20,
     fuzzy: false
-    // exclude: ['Welcome']
+    // exclude: ['search']
 })
 </script>
