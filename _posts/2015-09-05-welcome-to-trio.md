@@ -2,7 +2,7 @@
 layout: post
 title: Welcome to Trio
 date: 2015-09-05
-update_date: 2015-09-06
+update_date: 2015-09-12
 summary: An introduction to a new Jekyll theme named Trio.
 logo: certificate
 ---
@@ -18,6 +18,7 @@ Trio is a simple, content-focused, responsive, mobile-friendly [Jekyll](http://j
 * Formspree [contact form]({{ site.url }}/contact/)
 * Nine color themes
 * Support for logos using [Font Awesome](http://fortawesome.github.io/Font-Awesome) icons
+* Full-text search
 
 <br/>
 ### Where is it?

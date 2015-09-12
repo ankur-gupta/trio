@@ -8,6 +8,7 @@ Trio is a simple, content-focused, responsive, mobile-friendly [Jekyll](http://j
 * Post sharing buttons
 * Paginated list of posts
 * Disqus integration
+* Full-text search 
 
 This [Jekyll](http://jekyllrb.com/) theme was crafted with <3 by [Ankur Gupta](https://github.com/ankur-gupta). Checkout the [demo](http://perfectlyrandom.org/trio/).
 
@@ -19,6 +20,7 @@ Trio was created using inspiration and partial code from these sources:
 * [Pixyll](http://pixyll.com/) theme by [John Otander](https://github.com/johnotander) - design principles, some HTML/CSS.
 * [Bourbon Refills](http://refills.bourbon.io/) - many HTML/CSS snippets.
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome) - awesome icons.
+* [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search) by [christian-fei](https://github.com/christian-fei) - full-text search.
 
 A big thank you to all of them. I have added links to their licenses wherever I substantially copied their code.
 
