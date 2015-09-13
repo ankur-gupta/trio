@@ -39,10 +39,7 @@ This is an example of the red/`base-08` color theme.
 ### Work in progress
 I am not an expert in SCSS and the current code might be superfluous or overkill. The theme works nicely even now but I will make the code more concise without changing the look and feel of the theme.
 
-Some things I plan to add in the future:
-
-* Add search capability
-* Add site icons
+See [issues](https://github.com/ankur-gupta/trio/issues) for future improvements. Feel free to add your own. 
 
 
 ### License
