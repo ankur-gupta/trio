@@ -6,7 +6,11 @@ layout: default
 
 <div class="post-title">
     <div class="logo">
-        <i class="fa fa-{{ page.logo }}"></i>
+        {% if page.logo %}
+            <i class="fa fa-{{ page.logo }} fa-fw"></i>
+        {% else %}
+            <i class="fa fa-question-circle fa-fw"></i>
+        {% endif %}
     </div>
     <div class="title">
         <h2>{{ page.title }}</h2>

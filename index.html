@@ -7,9 +7,9 @@ layout: default
     <div class="post-image">
         <a href="{{ site.url }}{{ post.url }}">
             {% if post.logo %}
-              <i class="fa fa-{{ post.logo }}"></i>
+              <i class="fa fa-{{ post.logo }} fa-fw"></i>
             {% else %}
-              <i class="fa fa-question-circle"></i>
+              <i class="fa fa-question-circle fa-fw"></i>
             {% endif %}
         </a>
     </div>
@@ -19,7 +19,7 @@ layout: default
             {% if post.summary %}
                 <span class="excerpt">{{ post.summary }}</span>
             {% else %}
-                <span class="excerpt">{{ post.excerpt }}</span>
+                <span class="excerpt">{{ post.excerpt | strip_html | truncatewords: 20}}</span>
             {% endif %}
         </p>
         <p class="post-detail">
