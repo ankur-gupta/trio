@@ -27,6 +27,10 @@ layout: default
             {% if site.disqus_shortname %}
               &middot;
               <a href="{{ site.url }}{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
+              {% if post.update_date %}
+                &middot;
+                Updated {{ post.update_date | date: site.date_format }}
+              {% endif %}
             {% endif %}
         </p>
     </div>

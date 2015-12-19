@@ -49,6 +49,9 @@ redcarpet:
 #   toc_levels: 1..6
 #   use_coderay: false
 
+# Gems
+gems: ['jekyll-paginate']
+
 # Exclude
 exclude: ['README.md']
 
