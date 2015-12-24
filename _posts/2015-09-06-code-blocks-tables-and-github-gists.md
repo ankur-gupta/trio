@@ -10,7 +10,7 @@ Examples to show how these basic components look in Trio.
 <br/>
 ### Code blocks
 
-Since Trio uses `redcarpet` instead of `kramdown`, we can use the triple backticks to define fenced code blocks. See the Markdown source of this file [here](https://github.com/ankur-gupta/trio/_posts/2015-09-06-code-blocks-tables-and-github-gists.md). 
+Since Trio uses `redcarpet` instead of `kramdown`, we can use the triple backticks to define fenced code blocks. See the Markdown source of this file [here](https://github.com/ankur-gupta/trio/blob/master/_posts/2015-09-06-code-blocks-tables-and-github-gists.md).
 
 Here is how code blocks look in Trio:
 
@@ -67,7 +67,7 @@ Markdown footnotes[^1] work nicely in Trio. You need to make sure proper extensi
 
 <br/>
 ### Tables
-This is how tables look like in Solo. See the Markdown source of this file [here](https://github.com/ankur-gupta/trio/_posts/2015-09-06-code-blocks-tables-and-github-gists.md) for a demo of Markdown Tables. An excellent source to create tables in many formats (including Markdown) is [Tables Generator](http://www.tablesgenerator.com/). 
+This is how tables look like in Solo. See the Markdown source of this file [here](https://github.com/ankur-gupta/trio/blob/master/_posts/2015-09-06-code-blocks-tables-and-github-gists.md) for a demo of Markdown Tables. An excellent source to create tables in many formats (including Markdown) is [Tables Generator](http://www.tablesgenerator.com/).
 
 | Left-Aligned  | Center Aligned  | Right Aligned |
 | :------------ |:---------------:| -----:|
