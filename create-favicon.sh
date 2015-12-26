@@ -37,7 +37,7 @@ label="T"
 font="OverlockBlackItalic"
 
 # Background color
-background_color='#477DCA'
+background_color='#477DCA' # (default) baby blue
 
 # Foreground color
 foreground_color='white'

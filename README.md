@@ -35,11 +35,12 @@ This is an example of the red/`base-08` color theme.
 
 ![Trio with red color theme](https://cloud.githubusercontent.com/assets/7110058/9712293/858a2090-54fe-11e5-8165-e16d3b2d9efd.png)
 
+### Script to create favicons
+I have written a small [bash script](https://github.com/ankur-gupta/trio/blob/master/create-favicon.sh) that creates favicons using [imagemagick's](http://www.imagemagick.org) `convert`. You can modify the script to change colors and the lettering. See [`_layouts/default.html`](https://github.com/ankur-gupta/trio/blob/master/_layouts/default.html#L55) for the HTML that specifies icons for various vendors.
 
-### Work in progress
-I am not an expert in SCSS and the current code might be superfluous or overkill. The theme works nicely even now but I will make the code more concise without changing the look and feel of the theme.
 
-See [issues](https://github.com/ankur-gupta/trio/issues) for future improvements. Feel free to add your own. 
+### Issues
+This theme should be ready for use. I am not an expert in SCSS and the current code might be superfluous or overkill. See [issues](https://github.com/ankur-gupta/trio/issues) for future improvements. Feel free to add your own. 
 
 
 ### License
