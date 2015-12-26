@@ -59,28 +59,33 @@ for lowdim in ${android_chrome_list}; do \
 done
 
 # Create generic favicons
-android_chrome_list="16 32 96 194"
-for lowdim in ${android_chrome_list}; do \
+generic_favicon_list="16 32 96 194"
+for lowdim in ${generic_favicon_list}; do \
   echo "Making ${lowdim}x${lowdim} image: favicon-${lowdim}x${lowdim}.png"
   convert favicon-${basedim}x${basedim}.png \
     -resize ${lowdim}x${lowdim} favicon-${lowdim}x${lowdim}.png
 done
 
 # Create Apple icons
-apple_dim_list="57 60 72 76 114 120 144 152 180"
-for lowdim in ${apple_dim_list}; do \
+apple_list="57 60 72 76 114 120 144 152 180"
+for lowdim in ${apple_list}; do \
   echo "Making ${lowdim}x${lowdim} image: apple-touch-icon-${lowdim}x${lowdim}.png"
   convert favicon-${basedim}x${basedim}.png \
     -resize ${lowdim}x${lowdim} \
     apple-touch-icon-${lowdim}x${lowdim}.png
 done
 
-# Create Microsoft icon
-lowdim=144
-echo "Making ${lowdim}x${lowdim} image: mstile-${lowdim}x${lowdim}.png"
+# Create Microsoft icons
+mstile_list="70 144 150 310"
+for lowdim in ${mstile_list}; do \
+  echo "Making ${lowdim}x${lowdim} image: mstile-${lowdim}x${lowdim}.png"
   convert favicon-${basedim}x${basedim}.png \
     -resize ${lowdim}x${lowdim} \
     mstile-${lowdim}x${lowdim}.png
+done
+# Create a wide MS icon of specific dimensions
+convert mstile-150x150.png -gravity center \
+  -background transparent -extent 310x150 mstile-310x150.png
 
 # Create a .ico file containing various resolutions
 convert favicon-${basedim}x${basedim}.png  -bordercolor transparent -border 0 \
