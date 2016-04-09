@@ -35,7 +35,7 @@ paginate: 4
 
 # Markdown
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 
 # Enable when using redcarpet
 redcarpet:
